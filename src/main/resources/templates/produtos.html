@@ -33,7 +33,17 @@
             </tr>
         </thead>
         <tbody>
-
+               <tr th:each="produto : ${listaDeProdutos}">
+               <td th:text="${produto.id}"></td>
+               <td th:text="${produto.nome}"></td>
+               <td th:text="${produto.codigoBarras}"></td>
+               <td th:text="${produto.preco}"></td>
+               <td>
+                <a th:href="#" class="btn btn-primary"></a>
+                <i class="fas fa-edit ml-2">Editar</i>
+               </td>
+            </td>
+   </tr>
         </tbody>
     </table>
         </div>
