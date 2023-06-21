@@ -7,6 +7,7 @@ public class Produto {
 	private String nome;
 	private String codigoBarras;
 	private double preco;
+	private String descricao;
 	public double getPreco() {
 		return preco;
 	}
@@ -30,6 +31,12 @@ public class Produto {
 	}
 	public void setId(long id) {
 		this.id = id;
+	}
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 }
